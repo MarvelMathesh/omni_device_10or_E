@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/land
+LOCAL_PATH := device/10or/E
 
 # Architecture
 TARGET_ARCH := arm64
@@ -50,6 +50,11 @@ TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/recovery/kernel
 # Encryption
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_FBE := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_CRYPTO_SYSTEM_VOLD_MOUNT := system vendor
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
